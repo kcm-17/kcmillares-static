@@ -80,15 +80,16 @@ yarn format:check   # Prettier check (used in CI)
 - GoDaddy DNS: point `A` records to GitHub Pages IPs and add `CNAME` for `www`
 
 ## Agent Workflow
-Four specialist agents collaborate on every feature. Invoke them via slash commands:
+Five specialist agents collaborate on every feature. Invoke them via slash commands:
 
 | Command | Role | Trigger |
 |---------|------|---------|
-| `/architect` | Designs components, routing, and interfaces | Start here with requirements |
+| `/ui-ux-designer` | Defines visual design, responsive layouts, color, typography, motion | Start here — before architecture |
+| `/architect` | Designs components, routing, and interfaces from the Design Spec | After design is approved |
 | `/frontend-dev` | Implements the architect's spec | After architecture is defined |
 | `/tester` | Runs tests, adds missing coverage | After implementation |
 | `/code-quality` | Enforces enterprise standards | After tests pass |
-| `/build-feature` | **Orchestrates all four agents end-to-end** | One command for full feature delivery |
+| `/build-feature` | **Orchestrates all five agents end-to-end** | One command for full feature delivery |
 
 ### Quality Gates
 - Zero TypeScript errors
