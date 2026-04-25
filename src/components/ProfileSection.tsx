@@ -10,7 +10,7 @@ export function ProfileSection({ profile }: ProfileSectionProps) {
       <SectionHeading>
         <span id="profile-heading">Professional Profile</span>
       </SectionHeading>
-      <p className="text-base leading-relaxed text-slate-600">{profile}</p>
+      <p className="text-base leading-relaxed text-slate-600 text-justify">{profile}</p>
     </section>
   )
 }
